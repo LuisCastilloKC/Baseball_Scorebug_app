@@ -6,9 +6,11 @@ import TeamName from './TeamName';
 const VisitorTeam = () =>{
     const [count, setCount] = useState(0)
 
-    const handleLess = () => {
-        setCount(count + -1)
+    const handLessAndPlus = () => {
+        setCount(count - 1)
+        setCount(count + 1)
     }
+
 
     return(
         <> 
@@ -16,7 +18,7 @@ const VisitorTeam = () =>{
                 <h1>VISITOR</h1>
                 <div>{count}</div>
             </div>
-            <TeamName handleLess={handleLess} />
+            <TeamName handLessAndPlus={handLessAndPlus} />
         </>
     )
 };

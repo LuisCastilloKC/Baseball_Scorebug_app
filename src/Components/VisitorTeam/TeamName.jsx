@@ -1,12 +1,12 @@
 import React from 'react';
 
-const TeamName = ({ handleLess }) =>{
+const TeamName = ({ handLessAndPlus }) =>{
 
     return(
         <div>
             <h4>Team Name</h4>
-            <button onClick={handleLess}>-</button>
-            <button>+</button>
+            <button onClick={handLessAndPlus}>-</button>
+            <button onClick={handLessAndPlus}>+</button>
         </div>
     )
 };
