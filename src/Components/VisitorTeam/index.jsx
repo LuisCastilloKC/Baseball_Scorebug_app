@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
-import TeamName from './TeamName';
+import VisitorName from './VisitorName';
 
 
 
 const VisitorTeam = () =>{
     const [count, setCount] = useState(0)
 
-    const handLessAndPlus = () => {
-        setCount(count - 1)
-        setCount(count + 1)
+    const handleVisitorButtonLess = () => {
+        setCount(count -1)
+    }
+
+    const handleVisitorButtonPlus = () => {
+        setCount(count +1)
     }
 
 
@@ -18,7 +21,7 @@ const VisitorTeam = () =>{
                 <h1>VISITOR</h1>
                 <div>{count}</div>
             </div>
-            <TeamName handLessAndPlus={handLessAndPlus} />
+            <VisitorName handleVisitorButtonLess={handleVisitorButtonLess} handleVisitorButtonPlus={handleVisitorButtonPlus} />
         </>
     )
 };
