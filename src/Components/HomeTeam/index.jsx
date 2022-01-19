@@ -4,7 +4,8 @@ const HomeTeam = () =>{
 
     return(
         <div>
-
+            <h1>HOME</h1>
+            <div>0</div>
         </div>
     )
 };
