@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TeamName from './HomeName';
+import HomeName from './HomeName';
 
 const HomeTeam = () =>{
     const [count, setCount] = useState(0);
@@ -15,10 +15,10 @@ const HomeTeam = () =>{
     return(
         <> 
             <div>
-                <h1>HOME</h1>
+                <h1>Team Name</h1>
                 <div>{count}</div>
             </div>
-            <TeamName handleHomeButtonLess={handleHomeButtonLess} handleHomeButtonPlus={handleHomeButtonPlus}/>
+            <HomeName handleHomeButtonLess={handleHomeButtonLess} handleHomeButtonPlus={handleHomeButtonPlus}/>
         </>
     )
 };

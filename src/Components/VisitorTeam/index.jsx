@@ -14,11 +14,10 @@ const VisitorTeam = () =>{
         setCount(count +1)
     }
 
-
     return(
         <> 
             <div>
-                <h1>VISITOR</h1>
+                <h1>Team Name</h1>
                 <div>{count}</div>
             </div>
             <VisitorName handleVisitorButtonLess={handleVisitorButtonLess} handleVisitorButtonPlus={handleVisitorButtonPlus} />

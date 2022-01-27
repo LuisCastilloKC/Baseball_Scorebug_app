@@ -4,7 +4,9 @@ const CounterBoard = () =>{
 
     return(
         <div>
-            <h1>Count: 0</h1>
+            <div> 0</div>
+            <div> 0 - 0</div>
+            <div>0 Outs</div>
         </div>
     )
 }
