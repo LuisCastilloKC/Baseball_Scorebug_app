@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CounterButton from './CounterButton';
 
 const CounterBoard = () =>{
+    const [count, setCount] = useState(0);
 
     return(
         <> 
